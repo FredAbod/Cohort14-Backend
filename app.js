@@ -24,9 +24,12 @@ app.post('/post', (req, res) => {
 })
 // Put Request
 app.put('/put', (req, res) => {
-    res.send('This is a put request');
+    res.send('This is a put request oooooooo');
 });
 
+app.delete('/delete', (req, res) => {
+    res.send('This is a delete request');
+});
 
 app.listen(port, ()=> {
     console.log(`Server is listening on http://localhost:${port}`);
